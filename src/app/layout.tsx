@@ -14,6 +14,11 @@ export const metadata: Metadata = {
     "Crea anuncios, títulos y descripciones para vender tus productos. Herramientas gratuitas, fáciles de usar y sin registro.",
   applicationName: site.name,
   robots: { index: site.isPublic, follow: site.isPublic },
+
+  verification: {
+   google: "6TL4-cCub4sRsyYNPzxp7SU2an-ZrzbpsMiLrHb2sq8",
+  },
+
   icons: { icon: "/icon.svg" },
 };
 
