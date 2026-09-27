@@ -1,5 +1,76 @@
 @import "tailwindcss";
 
+.cookie-consent {
+  position: fixed;
+  z-index: 50;
+  inset: auto 16px 16px;
+  max-width: 1000px;
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 8px 40px #172a3224;
+  max-height: calc(100dvh - 32px);
+  overflow-y: auto;
+}
+.cookie-consent h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.cookie-consent p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+.cookie-consent a {
+  color: var(--green-dark);
+  text-decoration: underline;
+}
+.cookie-consent-current {
+  margin-top: 8px;
+  font-weight: 600;
+}
+.cookie-consent-actions {
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: column;
+  gap: 10px;
+}
+.cookie-consent-actions .button {
+  min-height: 46px;
+  white-space: nowrap;
+}
+.cookie-settings-link {
+  border: 0;
+  padding: 0;
+  background: none;
+  color: inherit;
+  text-align: left;
+  font: inherit;
+}
+.cookie-settings-link:hover {
+  text-decoration: underline;
+}
+@media (max-width: 640px) {
+  .cookie-consent {
+    inset: auto 12px 12px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+    padding: 20px;
+  }
+  .cookie-consent-actions {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .cookie-consent-actions .button {
+    flex: 1 1 150px;
+  }
+}
+
 @theme inline {
   --color-brand: #087c59;
   --color-ink: #172a32;

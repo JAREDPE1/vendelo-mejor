@@ -81,7 +81,7 @@ export const institutionalPages: InstitutionalPage[] = [
     slug: "politica-privacidad",
     title: "Política de privacidad",
     description:
-      "Consulta cómo Véndelo Mejor trata la información de los formularios y los datos de medición utilizados para mejorar el sitio.",
+      "Consulta cómo Véndelo Mejor trata la información de los formularios y los datos de medición cuando aceptas la analítica.",
     intro:
       "Esta política describe el funcionamiento actual de Véndelo Mejor. Las herramientas pueden utilizarse sin crear una cuenta y los anuncios generados no se almacenan en una base de datos.",
     sections: [
@@ -96,11 +96,13 @@ export const institutionalPages: InstitutionalPage[] = [
       {
         title: "Google Analytics",
         paragraphs: [
-          "Véndelo Mejor utiliza Google Analytics 4 para conocer de forma agregada cómo se utiliza el sitio y mejorar sus herramientas.",
+          "Véndelo Mejor solo carga Google Analytics 4 cuando eliges «Aceptar analítica» en el aviso de consentimiento. Si eliges «Rechazar» o todavía no has aceptado, el servicio no se carga.",
+          "Tu elección se guarda en el almacenamiento local del navegador (localStorage) para recordarla en próximas visitas. Puedes cambiarla desde «Configurar cookies» en el pie de página.",
           "Este servicio permite medir información como visitas, sesiones, páginas consultadas, interacciones con el sitio, ubicación geográfica aproximada e información técnica del navegador y del dispositivo.",
           "Google Analytics puede utilizar cookies propias, como _ga, para distinguir usuarios y sesiones.",
           "La información recopilada mediante Analytics se utiliza para comprender el funcionamiento de la web y mejorar la experiencia de uso.",
           "Los datos que escribes dentro del creador de anuncios no se envían a Google Analytics como contenido de tus formularios.",
+          "Aceptar o rechazar la analítica no cambia el funcionamiento de las herramientas de Véndelo Mejor.",
         ],
       },
       {
@@ -184,7 +186,7 @@ export const institutionalPages: InstitutionalPage[] = [
     description:
       "Consulta qué cookies y tecnologías de medición utiliza actualmente Véndelo Mejor y para qué se utilizan.",
     intro:
-      "Véndelo Mejor utiliza Google Analytics para obtener estadísticas de uso del sitio. Las herramientas de creación de anuncios no necesitan cookies para procesar los datos que introduces.",
+      "Véndelo Mejor carga Google Analytics para obtener estadísticas de uso del sitio solo si aceptas la analítica. Las herramientas de creación de anuncios funcionan tanto si aceptas como si rechazas.",
     sections: [
       {
         title: "Qué son las cookies",
@@ -196,7 +198,7 @@ export const institutionalPages: InstitutionalPage[] = [
       {
         title: "Cookies de Google Analytics",
         paragraphs: [
-          "Actualmente utilizamos Google Analytics 4 para medir visitas y comprender de forma agregada cómo se utiliza Véndelo Mejor.",
+          "Google Analytics 4 se carga únicamente después de elegir «Aceptar analítica» para medir visitas y comprender de forma agregada cómo se utiliza Véndelo Mejor. No se carga si eliges «Rechazar» o no has aceptado.",
           "Google Analytics puede establecer cookies propias como _ga, utilizada para distinguir usuarios, y _ga_<identificador>, utilizada para mantener información relacionada con una sesión.",
           "Estas cookies permiten obtener estadísticas como número de visitas, páginas consultadas y comportamiento general dentro del sitio.",
           "Google establece periodos de duración para estas cookies, aunque estos pueden variar según la configuración del navegador, del usuario o de los servicios de Google.",
@@ -221,9 +223,11 @@ export const institutionalPages: InstitutionalPage[] = [
       {
         title: "Control de cookies",
         paragraphs: [
+          "El aviso de consentimiento permite elegir entre «Aceptar analítica» y «Rechazar». Guardamos esa elección en el almacenamiento local del navegador (localStorage) para recordarla en próximas visitas; este dato no contiene los productos ni los anuncios que generas.",
+          "Puedes cambiar tu decisión desde «Configurar cookies» en el pie de página. Rechazar la analítica desactiva la medición y no impide utilizar ninguna herramienta.",
           "Puedes revisar, bloquear o eliminar cookies desde las opciones de privacidad de tu navegador.",
           "Los nombres y la ubicación de estas opciones dependen del navegador y del dispositivo que utilices.",
-          "Bloquear determinadas cookies puede afectar algunas funciones de medición, aunque las herramientas principales de Véndelo Mejor pueden seguir funcionando.",
+          "Si eliminas el almacenamiento local que guarda tu elección, el sitio volverá a mostrar el aviso de consentimiento.",
         ],
       },
       {

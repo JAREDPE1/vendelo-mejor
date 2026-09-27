@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Icon } from "@/components/Icon";
 import { tools } from "@/data/tools";
+import { CookieSettingsButton } from "@/components/CookieConsent";
 
 export function Footer() {
   return (
@@ -59,6 +60,9 @@ export function Footer() {
             </li>
             <li>
               <Link href="/cookies">Cookies</Link>
+            </li>
+            <li>
+              <CookieSettingsButton />
             </li>
           </ul>
         </div>

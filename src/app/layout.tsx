@@ -1,7 +1,7 @@
-import Script from "next/script";
 import type { Metadata } from "next";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { CookieConsent } from "@/components/CookieConsent";
 import { site } from "@/lib/site";
 import "./globals.css";
 
@@ -31,21 +31,6 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body>
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-BH9WL8Z1EN"
-          strategy="afterInteractive"
-        />
-
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-BH9WL8Z1EN');
-          `}
-        </Script>
-
         <a className="skip-link" href="#contenido">
           Saltar al contenido
         </a>
@@ -53,6 +38,7 @@ export default function RootLayout({
         <Header />
         <main id="contenido">{children}</main>
         <Footer />
+        <CookieConsent />
       </body>
     </html>
   );

@@ -69,7 +69,7 @@ tests/
   product-validation.test.ts # Datos opcionales y restricciones numéricas
 ```
 
-`[slug]` no es una página genérica indexable: `generateStaticParams` prerenderiza cada URL definida y `dynamicParams = false` devuelve 404 para cualquier otra. Cada herramienta conserva su URL, título, descripción, canonical y contenido propio. Esta organización evita duplicar archivos de páginas que solo cambian datos. El contenido editorial se renderiza en el servidor; solo los formularios, la copia y el menú móvil necesitan interactividad.
+`[slug]` no es una página genérica indexable: `generateStaticParams` prerenderiza cada URL definida y `dynamicParams = false` devuelve 404 para cualquier otra. Cada herramienta conserva su URL, título, descripción, canonical y contenido propio. Esta organización evita duplicar archivos de páginas que solo cambian datos. El contenido editorial se renderiza en el servidor; los formularios, la copia, el menú móvil y el control de consentimiento necesitan interactividad.
 
 ## Rutas
 
@@ -127,7 +127,9 @@ Las etiquetas son «Faltan datos» (0–29), «Anuncio básico» (30–49), «Pu
 
 Las reglas adaptan los textos a la categoría, estado y datos aportados. No añaden garantías, accesorios ni afirmaciones no introducidas por el usuario. Las características se separan por saltos de línea o punto y coma; se conservan comas y decimales. La descripción corta limita la longitud a 300 caracteres y WhatsApp a 650. Los resúmenes priorizan detalles o fallas y mantienen los datos seleccionados completos, incluidas sus negaciones; si no cabe toda la información, indican que se consulte la descripción completa. El mejorador limpia espacios y saltos de línea y sugiere datos que faltan; no reescribe hechos mediante IA.
 
-Los formularios no envían datos a un servidor ni utilizan cookies, localStorage o analítica. Los resultados viven en la memoria de la página y pueden perderse al navegar o recargar. El botón de copia usa Clipboard API: requiere HTTPS o localhost; si falla, se ofrece copiar seleccionando el texto.
+Los datos de los formularios no se envían a un servidor ni a Google Analytics como contenido de los formularios; tampoco se guardan en cookies o localStorage. Los resultados viven en la memoria de la página y pueden perderse al navegar o recargar. El botón de copia usa Clipboard API: requiere HTTPS o localhost; si falla, se ofrece copiar seleccionando el texto.
+
+Google Analytics 4 (`G-BH9WL8Z1EN`) solo se carga tras elegir «Aceptar analítica» en el aviso de consentimiento. No se carga antes de aceptar ni al elegir «Rechazar». La decisión se guarda en localStorage para recordarla en próximas visitas y puede cambiarse desde «Configurar cookies» en el footer. Las herramientas funcionan independientemente de esa decisión. La elección guardada no contiene los datos de los productos ni los anuncios generados.
 
 La calculadora aplica `precio = (costo + gastos) / (1 - margen/100 - comisión/100)`. Acepta dos decimales y valida que margen + comisión sea menor que 100. Usa céntimos enteros para evitar errores de punto flotante y ajusta el precio para cubrir el margen después del redondeo de comisión. No estima el precio de mercado ni calcula impuestos que no se hayan introducido.
 
