@@ -44,6 +44,7 @@ export const institutionalPages: InstitutionalPage[] = [
       },
     ],
   },
+
   {
     slug: "contacto",
     title: "Contacto",
@@ -68,64 +69,73 @@ export const institutionalPages: InstitutionalPage[] = [
       {
         title: "Canal de atención",
         paragraphs: [
-          // LEGAL_REVIEW: Set CONTACT_EMAIL to a real, monitored email address
-          // before launch. The page renderer must display it when configured;
-          // otherwise it must clearly identify the contact channel as pending.
-          "Esta página mostrará el correo de atención cuando esté habilitado. Si todavía no aparece, el canal está pendiente de configuración y deberá estar disponible antes del lanzamiento público.",
+          // LEGAL_REVIEW: Set CONTACT_EMAIL to a real, monitored email address.
+          "El correo de atención configurado para Véndelo Mejor se muestra en esta página cuando está disponible.",
           "No hay un formulario de envío en esta versión. Cuando escribas al correo publicado, comparte únicamente la información necesaria para atender tu consulta.",
         ],
       },
     ],
   },
+
   {
     slug: "politica-privacidad",
     title: "Política de privacidad",
     description:
-      "Consulta cómo funciona el tratamiento de información en la versión actual de Véndelo Mejor y qué ocurre con los datos de tus anuncios.",
+      "Consulta cómo Véndelo Mejor trata la información de los formularios y los datos de medición utilizados para mejorar el sitio.",
     intro:
-      "Esta política describe la versión actual de Véndelo Mejor. Las herramientas funcionan sin cuentas de usuario ni una base de datos de anuncios.",
+      "Esta política describe el funcionamiento actual de Véndelo Mejor. Las herramientas pueden utilizarse sin crear una cuenta y los anuncios generados no se almacenan en una base de datos.",
     sections: [
       {
         title: "Información que introduces en las herramientas",
         paragraphs: [
-          "Los nombres de productos, precios, características y demás datos de los formularios se procesan en la memoria de tu navegador para generar los resultados. La aplicación no los envía a un servidor, no los guarda en una base de datos y no los utiliza para entrenar modelos de inteligencia artificial.",
-          "Esta versión no guarda tus anuncios en cookies ni en el almacenamiento local del navegador. Al usar un botón de copiar, el texto seleccionado se escribe en el portapapeles de tu dispositivo; su gestión posterior depende del sistema operativo y de las aplicaciones que utilices.",
-          "Evita introducir documentos de identidad, datos bancarios, direcciones particulares precisas u otra información sensible. Comparte en tus anuncios solo los datos que quieras hacer públicos.",
+          "Los nombres de productos, precios, características y demás datos que introduces en los formularios se procesan en tu navegador para generar los resultados. Véndelo Mejor no guarda esos anuncios en una base de datos ni utiliza su contenido para entrenar modelos de inteligencia artificial.",
+          "Al utilizar el botón de copiar, el texto seleccionado se envía al portapapeles de tu dispositivo. Su tratamiento posterior depende del sistema operativo y de las aplicaciones en las que decidas pegarlo.",
+          "Evita introducir documentos de identidad, datos bancarios, contraseñas, direcciones particulares exactas u otra información sensible.",
         ],
       },
       {
-        title: "Información técnica del alojamiento",
+        title: "Google Analytics",
         paragraphs: [
-          // LEGAL_REVIEW: Identify the actual hosting provider and processors;
-          // verify IP/access logs, purposes, lawful basis, retention, security,
-          // international transfers and safeguards before publishing this text.
-          "El proveedor que aloje el sitio puede tratar información técnica de las solicitudes, como direcciones IP, fechas de acceso y datos del navegador, para prestar y proteger el servicio. Este tratamiento depende de la configuración del alojamiento.",
-          "Los detalles del proveedor, los plazos de conservación y las condiciones aplicables deberán completarse antes del lanzamiento público.",
+          "Véndelo Mejor utiliza Google Analytics 4 para conocer de forma agregada cómo se utiliza el sitio y mejorar sus herramientas.",
+          "Este servicio permite medir información como visitas, sesiones, páginas consultadas, interacciones con el sitio, ubicación geográfica aproximada e información técnica del navegador y del dispositivo.",
+          "Google Analytics puede utilizar cookies propias, como _ga, para distinguir usuarios y sesiones.",
+          "La información recopilada mediante Analytics se utiliza para comprender el funcionamiento de la web y mejorar la experiencia de uso.",
+          "Los datos que escribes dentro del creador de anuncios no se envían a Google Analytics como contenido de tus formularios.",
+        ],
+      },
+      {
+        title: "Información técnica y alojamiento",
+        paragraphs: [
+          "Véndelo Mejor está alojado actualmente en la plataforma Netlify.",
+          "Como proveedor de infraestructura, Netlify puede procesar información técnica necesaria para entregar y proteger el sitio, como solicitudes de red, información del navegador, fechas de acceso y otros datos técnicos relacionados con el funcionamiento del servicio.",
+          "La dirección pública actual del proyecto es vendelo-mejor.netlify.app. Si en el futuro cambia el proveedor de alojamiento o el dominio, esta política podrá actualizarse.",
         ],
       },
       {
         title: "Comunicaciones por correo",
         paragraphs: [
-          // LEGAL_REVIEW: Confirm controller identity and contact details,
-          // email provider, lawful basis, retention/deletion period and how
-          // applicable access, correction, deletion and other rights are handled.
-          "Cuando esté habilitado el correo de contacto y nos escribas, recibiremos tu dirección y el contenido del mensaje para atender la consulta. No incluyas información que no sea necesaria para ese propósito.",
-          "La identificación del responsable y el procedimiento para ejercer los derechos que correspondan deberán estar disponibles antes del lanzamiento público. El canal de contacto se publicará en la página Contacto.",
+          "Si nos escribes al correo de contacto publicado en el sitio, recibiremos tu dirección de correo electrónico y el contenido del mensaje para poder atender tu consulta.",
+          "No incluyas información personal o confidencial que no sea necesaria para resolver tu solicitud.",
         ],
       },
       {
-        title: "Publicidad y servicios externos",
+        title: "Publicidad",
         paragraphs: [
-          "Actualmente la aplicación no incorpora anuncios de Google AdSense, herramientas de analítica ni scripts de seguimiento publicitario. Los espacios reservados para publicidad son elementos visuales y no cargan anuncios.",
-          // LEGAL_REVIEW: Before enabling AdSense or any analytics/tracking,
-          // reassess data flows, disclosures, vendor terms, user rights and any
-          // consent requirements applicable to users and the operator. Do not
-          // load nonessential technologies before required consent is obtained.
-          "Si se incorporan servicios publicitarios o de medición, esta política deberá actualizarse para explicar qué datos tratan y qué controles estarán disponibles. Se solicitará consentimiento cuando sea necesario.",
+          "Actualmente Véndelo Mejor no muestra anuncios reales de Google AdSense.",
+          "Los espacios reservados para publicidad que puedan existir dentro del diseño son únicamente espacios preparados para una futura integración y no muestran publicidad por sí mismos.",
+          "Si se incorpora Google AdSense u otro servicio publicitario en el futuro, esta política será actualizada para informar sobre los servicios utilizados, los datos implicados y los controles disponibles para los usuarios.",
+        ],
+      },
+      {
+        title: "Cambios en esta política",
+        paragraphs: [
+          "Esta política puede actualizarse cuando se añadan nuevas funcionalidades, servicios de terceros o cambios relacionados con el tratamiento de información.",
+          "La versión publicada en esta página será la referencia vigente del funcionamiento de Véndelo Mejor.",
         ],
       },
     ],
   },
+
   {
     slug: "terminos",
     title: "Términos de uso",
@@ -161,54 +171,65 @@ export const institutionalPages: InstitutionalPage[] = [
         paragraphs: [
           "Las funciones pueden evolucionar y el sitio puede presentar interrupciones por mantenimiento o incidencias técnicas. Conserva por tu cuenta los textos que quieras reutilizar, ya que esta versión no ofrece un historial guardado.",
           // LEGAL_REVIEW: Confirm enforceable terms, intellectual-property
-          // notices, consumer rights, limits of responsibility and the mechanism
-          // for communicating material changes. Do not invent a governing law,
-          // jurisdiction or waive rights that applicable law protects.
-          "Estos términos deberán revisarse antes del lanzamiento público para identificar al operador y precisar las condiciones legales aplicables, sin limitar los derechos que reconozca la legislación correspondiente.",
+          // notices, consumer rights, limits of responsibility and applicable law.
+          "Las condiciones de uso podrán actualizarse cuando cambien las funciones de la plataforma o los servicios utilizados.",
         ],
       },
     ],
   },
+
   {
     slug: "cookies",
     title: "Información sobre cookies",
     description:
-      "Información sobre cookies, almacenamiento del navegador y los cambios previstos si Véndelo Mejor incorpora publicidad o analítica.",
+      "Consulta qué cookies y tecnologías de medición utiliza actualmente Véndelo Mejor y para qué se utilizan.",
     intro:
-      "La versión actual de la aplicación no instala cookies ni utiliza almacenamiento local para guardar anuncios, preferencias o identificadores de seguimiento.",
+      "Véndelo Mejor utiliza Google Analytics para obtener estadísticas de uso del sitio. Las herramientas de creación de anuncios no necesitan cookies para procesar los datos que introduces.",
     sections: [
       {
         title: "Qué son las cookies",
         paragraphs: [
-          "Las cookies son pequeños archivos que un sitio puede guardar en el navegador para recordar información entre visitas. Otras tecnologías, como el almacenamiento local, también pueden conservar datos en el dispositivo.",
+          "Las cookies son pequeños archivos que un sitio puede guardar en el navegador para recordar o asociar información entre visitas.",
+          "También existen otras tecnologías de almacenamiento y medición que pueden cumplir funciones similares.",
         ],
       },
       {
-        title: "Funcionamiento actual",
+        title: "Cookies de Google Analytics",
         paragraphs: [
-          "Los datos de los formularios y los resultados permanecen en la memoria de la página mientras la utilizas. Las herramientas no necesitan cookies para generar los textos o realizar cálculos.",
-          "La aplicación no carga analítica, píxeles de seguimiento ni anuncios reales. Los espacios identificados para futura publicidad no almacenan información ni contactan con una red publicitaria.",
-          // LEGAL_REVIEW: Audit the deployed host, CDN and every integration
-          // for cookies and comparable technologies; distinguish provider-level
-          // behavior from application behavior and update this inventory.
-          "Antes del lanzamiento público deberá verificarse también el comportamiento del proveedor de alojamiento y de cualquier integración añadida.",
+          "Actualmente utilizamos Google Analytics 4 para medir visitas y comprender de forma agregada cómo se utiliza Véndelo Mejor.",
+          "Google Analytics puede establecer cookies propias como _ga, utilizada para distinguir usuarios, y _ga_<identificador>, utilizada para mantener información relacionada con una sesión.",
+          "Estas cookies permiten obtener estadísticas como número de visitas, páginas consultadas y comportamiento general dentro del sitio.",
+          "Google establece periodos de duración para estas cookies, aunque estos pueden variar según la configuración del navegador, del usuario o de los servicios de Google.",
         ],
       },
       {
-        title: "Si se añade publicidad o medición",
+        title: "Datos de los formularios",
         paragraphs: [
-          // LEGAL_REVIEW: Complete the provider/purpose/duration inventory and
-          // implement the applicable consent and withdrawal controls before
-          // adding AdSense, analytics or nonessential browser storage. Verify
-          // current regional and Google requirements with qualified advice.
-          "Si se incorporan Google AdSense, servicios de analítica u otras tecnologías, esta página deberá indicar sus proveedores, finalidades y duración. También deberán habilitarse los controles de consentimiento que correspondan antes de su activación.",
+          "Los datos que escribes para crear títulos, descripciones o anuncios se procesan en la memoria de la página mientras utilizas la herramienta.",
+          "Véndelo Mejor no utiliza cookies propias para crear un historial de los productos o anuncios que hayas generado.",
+          "Si recargas o cierras la página, los datos introducidos pueden perderse.",
         ],
       },
       {
-        title: "Controles del navegador",
+        title: "Publicidad",
         paragraphs: [
-          "Puedes revisar, bloquear o eliminar cookies desde los ajustes de privacidad de tu navegador. Los nombres de esas opciones varían según el navegador y el dispositivo.",
-          "Si tienes dudas sobre el funcionamiento de este sitio, consulta la política de privacidad y el canal disponible en la página Contacto.",
+          "Actualmente no utilizamos Google AdSense ni otras redes de publicidad.",
+          "Los espacios visuales preparados para futura publicidad no cargan anuncios ni realizan solicitudes publicitarias por sí mismos.",
+          "Si se incorpora publicidad posteriormente, esta página se actualizará para informar sobre las cookies o tecnologías adicionales que puedan utilizarse.",
+        ],
+      },
+      {
+        title: "Control de cookies",
+        paragraphs: [
+          "Puedes revisar, bloquear o eliminar cookies desde las opciones de privacidad de tu navegador.",
+          "Los nombres y la ubicación de estas opciones dependen del navegador y del dispositivo que utilices.",
+          "Bloquear determinadas cookies puede afectar algunas funciones de medición, aunque las herramientas principales de Véndelo Mejor pueden seguir funcionando.",
+        ],
+      },
+      {
+        title: "Cambios en el uso de cookies",
+        paragraphs: [
+          "Si Véndelo Mejor incorpora nuevos servicios de analítica, publicidad o tecnologías similares, esta información será actualizada para reflejar esos cambios.",
         ],
       },
     ],
